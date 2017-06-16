@@ -1,0 +1,107 @@
+* {
+    cursor: auto;
+    font-family: 'Playfair Display';
+}
+body {
+    background-image: url('https://s-media-cache-ak0.pinimg.com/736x/fc/43/27/fc4327119d8818e6df5c46b79d4421c2.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+h1 {
+    text-align: center;
+    font-family: 'Great Vibes';
+    font-size: 60px;
+}
+
+#time,#timeLab {
+    visibility: hidden;
+}
+
+
+#toDo,#appt,#addNotes {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-color: rgb(25, 25, 102);
+    border-style: double;
+    border-width: 4px;
+    background-color: rgba(153, 204, 255, .4);
+    
+
+}
+
+
+#appt {
+   margin-bottom: 20px;
+   float: left;
+   width: 45%;
+
+   
+}
+#toDo {
+    margin-bottom: 20px;
+    float: right;
+    width: 50%;
+
+
+}
+
+#addNotes {
+    float: right;
+    clear: right;
+    width: 50%;
+
+}
+
+#input,#extra {
+    clear: both;
+    margin-left: 15px;
+}
+
+
+li:hover, #add:hover, button:hover{
+    cursor: pointer;
+}
+
+li {
+    font-size: 18px;
+}
+.dash {
+    text-decoration: line-through;
+}
+ 
+#help {
+    box-sizing: content-box;
+    z-index: 1;
+    display: none;
+    background-color: #e6e6ff;
+    border: 5px double rgb(25, 25, 102);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    width: 600px;
+    
+}
+#close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+button, h4 {
+    display: inline;
+}
+
+h4 {
+    
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+h4:hover {
+    color: #3399ff;
+}
