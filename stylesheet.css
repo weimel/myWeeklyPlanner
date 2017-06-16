@@ -1,0 +1,56 @@
+* {
+
+    text-align: center;
+    cursor: auto;
+
+}
+body {
+        background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c8/05/25/c805259d8a4dff18dad0d5862b3fc321.png");
+        background-size: cover;
+}
+h1 {
+    font-family: 'Playfair Display';
+    /*background-color: #cce0ff;*/
+    
+}
+.day {
+    border-style: solid;
+    font-size: 50px;
+    font-family: 'Great Vibes';
+    width: 600px;
+    margin: auto;
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.day:hover {
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+#Monday {
+    background-color: #e6f2ff;
+
+}
+#Tuesday {
+    background-color: #cce6ff;
+}
+#Wednesday {
+    background-color: #b3d9ff;
+}
+#Thursday {
+    background-color: #99ccff;
+}
+#Friday {
+    background-color: #80bfff;
+}
+#Saturday {
+    background-color: #66b3ff;
+}
+#Sunday {
+    background-color: #4da6ff;
+}
