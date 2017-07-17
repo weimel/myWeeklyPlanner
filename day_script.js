@@ -1,3 +1,8 @@
+var count = 0;
+function store(item){
+    localStorage.setItem(count,item);
+    count = count + 1;
+}
 function add(){
 
     if($('#categ').val() === '0'){
@@ -28,7 +33,8 @@ function addAppt(){
         return;
     }
     if(times.length === 0){
-        list.appendChild(li);        
+        list.appendChild(li); 
+        store(li);
     }
     else {
         
@@ -41,12 +47,14 @@ function addAppt(){
             else if(times[i].value > value){    
                 //times[i].prepend(li);
                 list.insertBefore(li,times[i]);
+                store(li);
                 return;
             }
             ++i;
         }
         if(i === times.length){
             list.insertBefore(li,times[times.length]);
+            store(li);
         }
         
     }
@@ -62,6 +70,7 @@ function addTask(){
     }
     li1.appendChild(document.createTextNode($('#descrip').val()));
     ul1.appendChild(li1);
+    store(li1);
 }
 
 function addNote(){
@@ -72,7 +81,8 @@ function addNote(){
         return;
     }
     li.appendChild(document.createTextNode($('#descrip').val()));
-    ul.appendChild(li);   
+    ul.appendChild(li); 
+    store(li);
 }
 $(document).ready(function(){
     $('#categ').change(function(){
@@ -107,4 +117,3 @@ $(document).ready(function(){
         $('#help').css('display', 'none');
     });
 });
-
